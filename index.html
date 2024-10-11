@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <title>DuoPalet</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header bg-header" id="header">
+            <nav class="nav container">
+                <a href="#" class="logo">DuoPalet</a>
+                <div class="menu" id="menu">
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#home" class="homelink active-link">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="#about" class="homelink">About</a>
+                        </li>
+                        <li class="item">
+                            <a href="#send" class="homelink">History</a>
+                        </li>
+                    </ul>
+                    <!--Close Button-->
+                    <div class="close" id="close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                    <img src="" alt="" class="img-1">
+                </div>
+                <!--Toggle Button-->
+                <div class="toggle" id="toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <h1 class="title">Empowering Interaction <br> for Future Web Engagement</h1>
+                <img src="moon.png" alt="" class="moon parallax" data-rellax-speed="-15">
+                <img src="city.png" alt="" class="village parallax" data-rellax-speed="-10">
+                <img src="water.png" alt="" class="water parallax" data-rellax-speed="-10">
+                <img src="rail.png" alt="" class="rail">
+                <img src="train.png" alt="" class="train " id="train">
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="aboutcont container grid">
+                    <div class="aboutdata">
+                        <h2 class="sectiontitle">
+                            about
+                        </h2>
+                        <p class="aboutdesc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quam nostrum facere quod rerum aliquid aspernatur reprehenderit accusantium nam omnis? Recusandae harum cumque repudiandae voluptatibus explicabo enim placeat delectus magnam!
+                        </p>
+                        <a href="#send" class="button">Next!</a>
+                    </div>
+                    <img src="about.png" class="aboutimg">
+                    <img src="lamp.png" class="aboutset1">
+                    <img src="lamp.png" class="aboutset2">
+                </div>
+            </section>
+
+            <!--==================== SEND ====================-->
+            <section class="send section" id="send">
+                <h2 class="title">history</h2>
+                <div class="sendcont container grid">
+                    <div class="card">
+                        <img src="img1.png" alt="" class="sendimg">
+                        <h3 class="sendtitle">A</h3>
+                        <p class="senddesc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea blanditiis sunt ex animi rerum tempore dolorum, facilis omnis tempora iure eveniet dolor, amet quibusdam nostrum necessitatibus fugiat, corporis ducimus.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="img2.png" alt="" class="sendimg">
+                        <h3 class="sendtitle">B</h3>
+                        <p class="senddesc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea blanditiis sunt ex animi rerum tempore dolorum, facilis omnis tempora iure eveniet dolor, amet quibusdam nostrum necessitatibus fugiat, corporis ducimus.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="img3.png" alt="" class="sendimg">
+                        <h3 class="sendtitle">C</h3>
+                        <p class="senddesc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea blanditiis sunt ex animi rerum tempore dolorum, facilis omnis tempora iure eveniet dolor, amet quibusdam nostrum necessitatibus fugiat, corporis ducimus.
+                        </p>
+                    </div>
+                    <img src="setting.png" alt="" class="sendset1">
+                    <img src="setting.png" alt="" class="sendset2">
+                    <img src="setting.png" alt="" class="sendset3">
+                </div>
+            </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footercont container">
+                <a href="#" class="footerlogo">DuoPalet</a>
+                <ul class="footersoc">
+                    <li>
+                        <a href="" target="_blank" class="footerlink">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" class="footerlink">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+                <span class="copy">
+                    &#169; Copyright DuoPalet. All rights reserved
+                </span>
+                <img src="code.png" alt="" class="footerset1">
+                <img src="code.png" alt="" class="footerset2">
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== RELLAX JS ===============-->
+        <script src="js/rellax.min.js"></script>
+        <script>
+            var DEBUG = false;
+            var rellax = new Rellax('.parallax');
+        </script>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script>ScrollReveal({
+            reset: true, 
+            origin: 'top',
+            distance: '60px', 
+            duration: 2500, 
+            delay: 100
+        }) ;
+        ScrollReveal().reveal('.aboutimg', {origin: 'right'});
+        ScrollReveal().reveal('.card', {interval: 70});
+        ScrollReveal().reveal('.footer');
+        </script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
