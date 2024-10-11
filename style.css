@@ -305,7 +305,7 @@ img {
 
 .aboutset1{
   top: 12rem;
-  left: 1rem;
+  left: -1rem;
   animation: var(--animate-1);
 }
 
@@ -365,20 +365,20 @@ img {
 }
 
 .sendset1{
-  left: 0;
+  left: -2rem;
   top: 6rem;
   animation: var(--animate-1);
 }
 
 .sendset2{
   top: 23rem;
-  right: 1rem;
+  right: -2rem;
   animation: var(--animate-2);
 }
 
 .sendset3{
   bottom: 9rem;
-  left: 1rem;
+  left: -2rem;
   animation: var(--animate-1);
 }
 
